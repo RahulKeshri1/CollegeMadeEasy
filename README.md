@@ -92,3 +92,5 @@ For any queries or support, please contact
 - rahulkumarkeshri475@gmail.com
 - nailwaldhruv@gmail.com
 ---
+
+Thank you for using CollegeMadeEasy! We hope it helps you in your academic journey.
