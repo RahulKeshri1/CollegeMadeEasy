@@ -12,15 +12,39 @@
         box-sizing: border-box;
         font-family: 'Inter', sans-serif;
       }
-      html,
-      body {
+      html,body {
         width: 100%;
         height: 100%;
+      }
+      /*header{
+        background-color: black;
+      }*/
+      table{
+        margin-top: 20px;
+        padding: 5px;  
+      }
+      body{
+        background-color: rgb(34, 33, 33);
+        color: rgb(255,255,255);
+      }
+      a{
+        color: #fff; 
+        text-decoration: none;
+      }
+      footer {
+        padding-top: 20px; /* Space before footer starts */
+        background-color: rgb(44, 43, 43);
+      }
+      #foot{
+        display: flex; 
+        justify-content: space-between; 
+        padding: 20px
       }
       .stream-section {
         padding-left: 30px;
         margin-top: 20px;
         margin-bottom: 40px; /* Space between stream and subjects */
+
       }
       .subjects-container {
         display: flex;
@@ -29,44 +53,79 @@
         padding-left: 20px;
         margin-bottom: 30px; /* Space between subjects and footer */
       }
-      footer {
-        padding-top: 20px; /* Space before footer starts */
-      }
-      table{
-        margin-top: 20px;
-        padding: 5px;  
-      }
-      body{
-        background-color: #E3F2FD;
-        color: #333333;
-      }
-      a{
-        color: #1565C0;  
-      }
       #last{
         text-align: center;
+      }
+      #logo{
+        text-decoration: none;
+        color: #333333;
+      }
+      img{
+        height: 60px;
+        width: 60px;
+        margin: 10px;
+      }
+      #logo-container{
+        display:flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 50px;
+        color: #333333;
+      }
+      .subjects-container{
+        display: flex; 
+        justify-content: space-between; 
+        padding: 50px;
+        
+      }
+      .subject-section{
+        padding: 20px;
+        /*background-color: #1565c0;*/
+        outline: black;
+        border-radius: 2em;
+        box-shadow: #333333;
+        background-image: url(bg.png);
+      }
+      .subject-section:hover{
+        background-color: rgba(5, 5, 236, 0.541);
+        box-shadow: 5px 10px 20px rgba(0,0,0,0.3);
+      }
+      .subject-link{
+        color: white;
+        text-decoration: none;
+      }
+      .subject-link:hover{
+        /*background-color: rgba(194, 26, 54, 0.541);*/
+        box-shadow: 5px 10px 20px rgba(255, 255, 255, 0.3);
       }
     </style>
   </head>
   <body>
     <header>
-      <div style="display: flex; align-items: center">
-        <div id="logo">
+        <a href="index.html" id="logo-container">
+            <div id="img">
+                <img src="logo.jpg" alt="CollegeMadeEasy logo">
+            </div>
+            <span>CollegeMadeEasy</span>
+        </a>
+      <!-- <div style="display: flex; align-items: center">
+        <a href="index.html" id="logo">
+            <div id="logo-image">
           <img
             src="logo.jpg"
             alt="College Made Easy"
             style="width: 50px; height: auto; margin-right: 10px"
           />
         </div>
-        <div>
+        <span>
           <h1 style="margin: 0"><b>College Made Easy</b></h1>
-        </div>
-      </div>
+        </span></a> -->
+
       <nav>
         <p style="text-align: end; padding-right: 20px">
-          <a href="index.html">Home</a> &#9475; &nbsp;
-          <a href="">Notes</a> &#9475; &nbsp; <a href="">PYQ</a> &#9475; &nbsp;
-          <a href="about.html">About Us</a> &#9475; &nbsp;
+          <a href="index.html">Home</a> &nbsp;
+          <a href="">Notes</a>  &nbsp; <a href="">PYQ</a>  &nbsp;
+          <a href="about.html">About Us</a>  &nbsp;
           <a href="contact.html">Contact Us</a>
         </p>
       </nav>
@@ -76,8 +135,9 @@
       <h2 style="text-align: center"><b>STREAM</b></h2>
     </div>
 
+
     <div class="subjects-container">
-      <div id="science">
+      <div id="science" class="subject-section">
         <h3 style="padding-left: 100px">Science (BSc)</h3>
         <table class = "stream">
           <tr class="row">
@@ -87,32 +147,32 @@
           <tr class="row">
             <td style="padding-right: 20px">
               <br />
-              <a href="CSnotes.html">Computer Science</a>
+              <a href="CSnotes.html" class="subject-link">Computer Science</a>
             </td>
-            <td><br />Physical Science with Computer Science</td>
+            <td><br /><a href="#" class="subject-link">Physical Science with Computer Science</a></td>
           </tr>
           <tr class="row">
-            <td><br />Botany</td>
-            <td><br />Life Science</td>
+            <td><br /><a href="#" class="subject-link">Botany</a></td>
+            <td><br /><a href="#" class="subject-link">Life Science</a></td>
           </tr>
           <tr class="row">
-            <td><br />Chemistry</td>
-            <td><br />Physical Science With Chemistry</td>
+            <td><br /><a href="#" class="subject-link">Chemistry</a></td>
+            <td><br /><a href="#" class="subject-link">Physical Science With Chemistry</a></td>
           </tr>
           <tr class="row">
-            <td><br />Maths</td>
-            <td><br />Physical Science With Electronics</td>
+            <td><br /><a href="#" class="subject-link">Maths</a></td>
+            <td><br /><a href="#" class="subject-link">Physical Science With Electronics</a></td>
           </tr>
           <tr class="row">
-            <td><br />Zoology</td>
+            <td><br /><a href="#" class="subject-link">Zoology</a></td>
           </tr>
           <tr class="row">
-            <td><br />Physics</td>
+            <td><br /><a href="#" class="subject-link">Physics</a></td>
           </tr>
         </table>
       </div>
 
-      <div id="commerce">
+      <div id="commerce" class="subject-section">
         <h3 style="padding-left: 100px">Commerce (BCom)</h3>
         <table>
           <tr class="row">
@@ -120,13 +180,13 @@
             <th style="padding-left: 105px">Program</th>
           </tr>
           <tr class="row">
-            <td><br />Bachelor of Commerce</td>
-            <td style="padding-left: 105px"><br />Bachelor of Commerce</td>
+            <td><br /><a href="#" class="subject-link">Bachelor of Commerce</a></td>
+            <td style="padding-left: 105px"><br /><a href="#" class="subject-link">Bachelor of Commerce</a></td>
           </tr>
         </table>
       </div>
 
-      <div id="arts">
+      <div id="arts" class="subject-section">
         <h3 style="padding-left: 150px">Arts (BA)</h3>
         <table>
           <tr class="row">
@@ -134,38 +194,35 @@
             <th style="padding-left: 105px">Program</th>
           </tr>
           <tr class="row">
-            <td><br />English</td>
+            <td><br /><a href="#" class="subject-link">English</a></td>
             <td style="padding-left: 105px">
-              <br />Bachelor of Business Administration [BBA(FIA)]
+              <br /><a href="#" class="subject-link">Bachelor of Business Administration [BBA(FIA)]</a>
             </td>
           </tr>
           <tr class="row">
-            <td><br />History</td>
+            <td><br /><a href="#" class="subject-link">History</a></td>
             <td style="padding-left: 105px">
-              <br />Bachelor of Business Economics [BBE]
+              <br /><a href="#" class="subject-link">Bachelor of Business Economics [BBE]</a>
             </td>
           </tr>
           <tr class="row">
-            <td><br />Political Science</td>
+            <td><br /><a href="#" class="subject-link">Political Science</a></td>
             <td style="padding-left: 105px">
-              <br />Bachelor of Management Studies [BMS]
+              <br /><a href="#" class="subject-link">Bachelor of Management Studies [BMS]</a>
             </td>
           </tr>
           <tr class="row">
-            <td><br />Economics</td>
+            <td><br /><a href="#" class="subject-link">Economics</a></td>
           </tr>
           <tr class="row">
-            <td><br />Sociology</td>
+            <td><br /><a href="#" class="subject-link">Sociology</a></td>
           </tr>
         </table>
       </div>
     </div>
 
     <footer>
-      <div
-        id="foot"
-        style="display: flex; justify-content: space-between; padding: 20px"
-      >
+      <div id="foot">
         <div style="max-width: 300px">
           <h3>Description</h3>
           <p>
