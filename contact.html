@@ -24,24 +24,39 @@
         a:hover {
         color: #ff5470; /* Lighter red hover effect */
         }
+        #logo-container {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 30px;
+        color: #e0e0e0;
+        justify-content: center;
+      }
+      img {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+      }
     </style>
 </head>
 <body>
 
     <!--Header-->
     <header>
-        <div style="display: flex; align-items: center;">
-            <div id="logo">
-                <img src="logo.jpg" alt="College Made Easy" style="width: 50px; height: auto; margin-right: 10px;">
-            </div>
-            <div>
-                <h1><b>College Made Easy</b></h1>
-            </div>
-        </div>
+        <a href="index.html" id="logo-container">
+          <div id="img">
+            <img src="logo.jpg" alt="CollegeMadeEasy logo" />
+          </div>
+          <span>CollegeMadeEasy</span>
+        </a>
         <nav>
-            <p style="text-align: end; padding-right: 20px;"><a href="index.html">Home</a>&nbsp; <a href="KV.html">Knowledge Vault</a>  &nbsp; <a href="">PYQ</a> &nbsp; <a href="about.html">About Us</a>  &nbsp; <a href="contact.html">Contact Us</a> </p>
+          <p style="text-align: end; padding-right: 20px">
+            <a href="index.html">Home</a> &nbsp; <a href="KV.html">Knowledge Vault</a> &nbsp;
+            <a href="">PYQ</a> &nbsp; <a href="about.html">About Us</a> &nbsp;
+            <a href="contact.html">Contact Us</a>
+          </p>
         </nav>
-    </header>
+      </header>
 
     <!--Title of the page-->
     <h1>Contact Us</h1>
