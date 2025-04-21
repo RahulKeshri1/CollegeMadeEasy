@@ -4,134 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bcom(H) Knowledge Vault</title>
-    <style>
-      *{
-            font-family: "Inter", sans-serif;
-        }
-    
-      html, body {
-        width: 100%;
-        height: 100%;
-        background-color: #121212; /* Dark background */
-        color: #e0e0e0; /* Light gray text for contrast */
-      }
-    
-      a {
-        text-decoration: none;
-        color: #e0e0e0; /* Red for contrast */
-        transition: all 0.3s ease-in-out;
-      }
-    
-      a:hover {
-        color: #ff5470; /* Lighter red hover effect */
-      }
-    
-      .stream-section {
-        padding-left: 30px;
-        margin-top: 20px;
-        margin-bottom: 40px;
-      }
-    
-      .subjects-container {
-        display: flex;
-        gap: 50px;
-        align-items: start;
-        padding-left: 20px;
-        margin-bottom: 30px;
-      }
-    
-      #last {
-        text-align: center;
-      }
-    
-      #logo {
-        text-decoration: none;
-        color: #ff3b5c; /* Red logo color */
-      }
-    
-      img {
-        height: 60px;
-        width: 60px;
-        margin: 10px;
-      }
-    
-      #logo-container {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        font-size: 50px;
-        color: #e0e0e0;
-      }
-    
-      .subjects-container {
-        display: flex;
-        justify-content: space-between;
-        padding: 50px;
-      }
-    
-      .subject-section {
-        padding: 20px;
-        border-radius: 1em;
-        background-color: #1e1e1e; /* Dark card background */
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-        transition: all 0.3s ease-in-out;
-      }
-    
-      .subject-section:hover {
-        background-color: #292929; /* Slightly lighter gray on hover */
-        box-shadow: 0px 0px 20px rgba(255, 59, 92, 0.3);
-        transform: scale(1.05);
-      }
-    
-      .subject-link {
-        color: #e0e0e0;
-        text-decoration: none;
-        font-weight: bold;
-      }
-    
-      .subject-link:hover {
-        background-color: rgba(255, 59, 92, 0.2); /* Red tint on hover */
-        box-shadow: 0px 0px 10px rgba(255, 59, 92, 0.3);
-        transition: all 0.3s ease-in-out;
-      }
-    
-      footer {
-        padding-top: 20px;
-        background-color: #181818; /* Slightly darker footer */
-      }
-    
-      #foot {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
-        color: #e0e0e0;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
 
     <!-- Header -->
      
-    <header>
-      <div style="display: flex; align-items: center;">
-          <div id="logo">
-              <img src="logo.jpg" alt="College Made Easy" style="width: 50px; height: auto; margin-right: 10px;">
-          </div>
-          <div>
-              <h1 style="margin: 0;"><b>College Made Easy</b></h1>
-          </div>
-      </div>
-      <nav>
-          <p style="text-align: end; padding-right: 20px;"><a href="index.html">Home</a>&nbsp; <a href="KV.html">Knowledge Vault</a>  &nbsp; <a href="">PYQ</a> &nbsp; <a href="about.html">About Us</a>  &nbsp; <a href="contact.html">Contact Us</a> </p>
-      </nav>
-  </header>
+    <div id="header"></div>
 
     <!-- Title -->
 
     <div id="title" style="text-align: center">
       <h1>WELCOME TO KNOWLEDGE VAULT FOR Bachelors of Commerce (Program)!!!!!!!</h1>
     </div>
-    <div id="dropdown" style="text-align: center;">
+    <!-- <div id="dropdown" style="text-align: center;">
       <button onclick="myFunction()" class="dropbtn">Semester</button>
       <div id="myDropdown" class="dropdown-content">
         <a href="">Semester - I</a>
@@ -140,107 +26,36 @@
         <a href=""><br />Semester - IV</a>
         <a href=""><br />Semester - V</a>
         <a href=""><br />Semester - VI</a><br />
-      </div>
+      </div> -->
     </div>
     <h2 style="text-align: center">Youtube Playlists</h2>
     <div id="Youtube" style="display: flex; gap: 50px; align-items: start">
       <div id="Management">
         <h2 style="text-align: center">Management Principles and Applications Playlist</h2>
         <h3 style="text-align: center">English Playlist</h3>
-        <iframe
-        height="200px"
-        src="https://www.youtube.com/embed/videoseries?list=PL92RPe36fLKiKB-ymuwJg6ae3_u5zYrFH&si=ZXmA863AwuIFGZki"
-        frameborder="0"
-        allowfullscreen
-          >
-        </iframe>
+        <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PL92RPe36fLKiKB-ymuwJg6ae3_u5zYrFH&si=ZXmA863AwuIFGZki" frameborder="0" allowfullscreen > </iframe>
         
         <h3 style="text-align: center">Hindi Playlist</h3>
-        <iframe
-        height="200px"
-        style="padding-left: 10px"
-        src="https://www.youtube.com/embed/videoseries?list=PLttZ-A3eBJv0rl6FyGZL6Zuf8daByn4CA&si=kXKIGoGphQrEQ3ig"
-        frameborder="0"
-        allowfullscreen
-        >
-        </iframe>
+        <iframe height="200px" style="padding-left: 10px" src="https://www.youtube.com/embed/videoseries?list=PLttZ-A3eBJv0rl6FyGZL6Zuf8daByn4CA&si=kXKIGoGphQrEQ3ig" frameborder="0" allowfullscreen > </iframe>
       </div>
-      <div id="Business
-      Laws" style="padding-left: 205px">
-          <h2 style="text-align: center">Business
-            Laws</h2>
+      <div id="Business Laws" style="padding-left: 205px">
+          <h2 style="text-align: center">Business Laws</h2>
           <h3 style="text-align: center">English Playlist</h3>
-          <iframe
-          height="200px"
-          src="https://www.youtube.com/embed/videoseries?list=PLoJHkGmgd2_nEfRW1Cm7ojI5abflSzRVE&si=MyhkBkdvjNY4p9a0"
-          frameborder="0"
-          allowfullscreen
-          >
-        </iframe>
+          <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLoJHkGmgd2_nEfRW1Cm7ojI5abflSzRVE&si=MyhkBkdvjNY4p9a0" frameborder="0" allowfullscreen > </iframe>
         
         <h3 style="text-align: center">Hindi Playlist</h3>
-        <iframe
-        height="200px"
-        style="padding-left: 10px"
-        src="https://www.youtube.com/embed/videoseries?list=PLsOlZpO_j74pnpRLV9Fq9PpVjj66Tq9QD&si=jTigt5ilHXh6v04p"
-        frameborder="0"
-        allowfullscreen
-        >
-    </iframe>
+        <iframe height="200px" style="padding-left: 10px" src="https://www.youtube.com/embed/videoseries?list=PLsOlZpO_j74pnpRLV9Fq9PpVjj66Tq9QD&si=jTigt5ilHXh6v04p" frameborder="0" allowfullscreen > </iframe>
 </div>
 <div id="Financial Accounting" style="padding-left: 205px">
         <h2 style="text-align: center">Financial Accounting</h2>
         <h3 style="text-align: center">English Playlist</h3>
-        <iframe
-          height="200px"
-          src="https://www.youtube.com/embed/videoseries?list=PLxP0KZzCGFYMghlw8ObWScuUwepqjXjbB&si=lc2_HSOQQ9gYwvJV"
-          frameborder="0"
-          allowfullscreen
-        >
-        </iframe>
+        <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLxP0KZzCGFYMghlw8ObWScuUwepqjXjbB&si=lc2_HSOQQ9gYwvJV" frameborder="0" allowfullscreen > </iframe>
 
         <h3 style="text-align: center">Hindi Playlist</h3>
-        <iframe
-          height="200px"
-          style="padding-left: 10px"
-          src="https://www.youtube.com/embed/videoseries?list=PLsOlZpO_j74qjpP84xI1zXFkPsapbi16h&si=fOWvQqF3BXH8S3BE"
-          frameborder="0"
-          allowfullscreen
-        >
-        </iframe>
+        <iframe height="200px" style="padding-left: 10px" src="https://www.youtube.com/embed/videoseries?list=PLsOlZpO_j74qjpP84xI1zXFkPsapbi16h&si=fOWvQqF3BXH8S3BE" frameborder="0" allowfullscreen > </iframe>
       </div>
     </div>
-    <footer>
-      <div id="foot" style="display: flex; justify-content: space-between; padding: 20px;">
-
-          <div style="max-width: 300px;">
-              <h3>Description</h3>
-              <p>All materials (books, notes, and papers) are posted for educational purposes only. We do not claim ownership.</p>
-          </div>
-          <div>
-              <h3>Links</h3>
-              <ul style="list-style: none; padding: 0;">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="KV.html">Knowledge Vault</a></li>
-                  <li><a href="#">PYQ</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-              </ul>
-          </div>
-          <div>
-              <h3>Support</h3>
-              <p><a href="contact.html">Contact Us</a></p>
-          </div>
-          <div>
-              <h3>Contact</h3>
-              <p>
-                  <a href="mailto:collegemadeeasy.du@gmail.com">📧 collegemadeeasy.du@gmail.com</a>
-              </p>
-          </div>
-      </div>
-      <div id="last" style="text-align: center;">
-          <p>&copy; 2025 collegemadeeasy &#9475 All Right Reserved </p>
-      </div>
-  </footer>
+    <div id="footer"></div>
+       <script src="assets/js/layout.js"></script>
   </body>
 </html>

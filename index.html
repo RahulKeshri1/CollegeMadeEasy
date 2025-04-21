@@ -4,366 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>College Made Easy</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Trirong"
-    />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Inter", sans-serif;
-      }
-
-      html,
-      body {
-        width: 100%;
-        height: 100%;
-        background-color: #121212;
-        color: #e0e0e0;
-      }
-
-      a {
-        text-decoration: none;
-        color: #e0e0e0;
-        transition: all 0.3s ease-in-out;
-      }
-
-      a:hover {
-        color: #ff5470;
-      }
-
-      header {
-        padding: 15px;
-      }
-
-      nav {
-        margin-top: 10px;
-      }
-
-      nav p {
-        text-align: center;
-        padding: 10px 0;
-      }
-
-      @media (min-width: 768px) {
-        nav p {
-          text-align: end;
-          padding-right: 20px;
-        }
-      }
-
-      .stream-section {
-        padding: 20px 15px;
-        margin-bottom: 20px;
-        text-align: center;
-      }
-
-      .subjects-container {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        padding: 20px;
-        margin-bottom: 30px;
-      }
-
-      @media (min-width: 992px) {
-        .subjects-container {
-          flex-direction: row;
-          justify-content: space-between;
-          padding: 30px 50px;
-          gap: 20px;
-        }
-      }
-
-      #last {
-        text-align: center;
-        padding: 15px;
-      }
-
-      #logo {
-        text-decoration: none;
-        color: #ff3b5c;
-      }
-
-      img {
-        height: 50px;
-        width: 50px;
-        margin-right: 10px;
-      }
-
-      @media (min-width: 768px) {
-        img {
-          height: 60px;
-          width: 60px;
-        }
-      }
-
-      #logo-container {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        font-size: 30px;
-        color: #e0e0e0;
-        justify-content: center;
-      }
-
-      @media (min-width: 768px) {
-        #logo-container {
-          font-size: 40px;
-          justify-content: flex-start;
-        }
-      }
-
-      @media (min-width: 992px) {
-        #logo-container {
-          font-size: 50px;
-        }
-      }
-
-      .subject-section {
-        padding: 20px;
-        border-radius: 1em;
-        background-color: #1e1e1e;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-        transition: all 0.3s ease-in-out;
-        width: 100%;
-        overflow-x: auto;
-      }
-
-      .subject-section h3 {
-        text-align: center;
-        margin-bottom: 15px;
-        padding-left: 0;
-      }
-
-      @media (min-width: 768px) {
-        .subject-section h3 {
-          padding-left: 50px;
-        }
-      }
-
-      @media (min-width: 992px) {
-        .subject-section h3 {
-          padding-left: 100px;
-        }
-      }
-
-      .subject-section:hover {
-        background-color: #292929;
-        box-shadow: 0px 0px 20px rgba(255, 59, 92, 0.3);
-        transform: scale(1.02);
-      }
-
-      @media (min-width: 992px) {
-        .subject-section:hover {
-          transform: scale(1.05);
-        }
-      }
-
-      .subject-link {
-        color: #e0e0e0;
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      .subject-link:hover {
-        background-color: rgba(255, 59, 92, 0.2);
-        box-shadow: 0px 0px 10px rgba(255, 59, 92, 0.3);
-        transition: all 0.3s ease-in-out;
-      }
-
-      table {
-        width: 100%;
-      }
-
-      .row td {
-        padding-right: 10px;
-      }
-
-      @media (min-width: 768px) {
-        .row td {
-          padding-right: 20px;
-        }
-      }
-
-      footer {
-        padding-top: 20px;
-        background-color: #181818;
-      }
-
-      #foot {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        padding: 20px;
-        color: #e0e0e0;
-      }
-
-      @media (min-width: 768px) {
-        #foot {
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-between;
-        }
-
-        #foot div {
-          flex-basis: 45%;
-        }
-      }
-
-      @media (min-width: 992px) {
-        #foot {
-          flex-wrap: nowrap;
-        }
-
-        #foot div {
-          flex-basis: auto;
-        }
-      }
-
-      #foot div {
-        margin-bottom: 15px;
-      }
-
-      #foot ul {
-        list-style: none;
-        padding: 0;
-      }
-
-      #foot ul li {
-        margin-bottom: 5px;
-      }
-
-      a {
-        text-decoration: none;
-        color: #e0e0e0;
-        transition: all 0.3s ease-in-out;
-        position: relative;
-      }
-
-      a::after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 2px;
-        bottom: -2px;
-        left: 0;
-        background-color: #ff5470;
-        transition: width 0.3s ease-in-out;
-      }
-
-      a:hover::after {
-        width: 100%;
-      }
-
-      .subject-section {
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-      }
-
-      .subject-section:hover {
-        box-shadow: 0 6px 25px rgba(255, 59, 92, 0.4);
-      }
-
-      .ai-dropdown {
-        position: relative;
-        display: inline-block;
-        margin: 20px;
-      }
-
-      .dropbtn {
-        background-color: #ff3b5c;
-        color: white;
-        padding: 10px 20px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-        border-radius: 8px;
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #1e1e1e;
-        min-width: 200px;
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
-        z-index: 1;
-        border-radius: 10px;
-        overflow: hidden;
-      }
-
-      .dropdown-content a {
-        color: white;
-        padding: 10px 15px;
-        text-decoration: none;
-        display: block;
-      }
-
-      .dropdown-content a:hover {
-        background-color: #333;
-      }
-
-      .ai-dropdown:hover .dropdown-content {
-        display: block;
-      }
-
-      /* AI Panel */
-      #ai-panel {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        width: 400px;
-        height: 500px;
-        background-color: #111;
-        border-top-left-radius: 10px;
-        box-shadow: 0 0 15px rgba(255, 59, 92, 0.5);
-        display: none;
-        flex-direction: column;
-        z-index: 999;
-      }
-
-      #ai-panel iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-        border-top: 1px solid #333;
-      }
-
-      #close-panel {
-        background: #ff3b5c;
-        color: white;
-        border: none;
-        padding: 5px 10px;
-        font-size: 14px;
-        cursor: pointer;
-        align-self: flex-end;
-        margin: 5px;
-        border-radius: 5px;
-      }
-    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong"/>
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="index.html" id="logo-container">
-        <div id="img">
-          <img src="logo.jpg" alt="CollegeMadeEasy logo" />
-        </div>
-        <span>CollegeMadeEasy</span>
-      </a>
-      <nav>
-        <p style="text-align: end; padding-right: 20px">
-          <a href="index.html">Home</a> &nbsp;
-          <a href="KV.html">Knowledge Vault</a> &nbsp;
-          <a href="papers.html">Exam Archive</a> &nbsp;
-          <a href="about.html">About Us</a> &nbsp;
-          <a href="contact.html">Contact Us</a>
-        </p>
-      </nav>
-    </header>
+    <div id="userGreeting" style="float: right; margin-right: 20px; font-weight: bold;"></div>
+    <div id="header"></div>
 
     <div class="stream-section">
-      <h2><b>STREAM</b></h2>
+      <h2> Academic Streams</h2>
     </div>
 
     <div class="subjects-container">
@@ -380,9 +29,7 @@
               <a href="CSnotes.html" class="subject-link">Computer Science</a>
             </td>
             <td>
-              <br /><a href="#" class="subject-link"
-                >Physical Science with Computer Science</a
-              >
+              <br /><a href="#" class="subject-link">Physical Science with Computer Science</a>
             </td>
           </tr>
           <tr class="row">
@@ -392,9 +39,7 @@
           <tr class="row">
             <td><br /><a href="#" class="subject-link">Chemistry</a></td>
             <td>
-              <br /><a href="#" class="subject-link"
-                >Physical Science With Chemistry</a
-              >
+              <br /><a href="#" class="subject-link">Physical Science With Chemistry</a>
             </td>
           </tr>
           <tr class="row">
@@ -402,9 +47,7 @@
               <br /><a href="Maths(H).html" class="subject-link">Maths</a>
             </td>
             <td>
-              <br /><a href="#" class="subject-link"
-                >Physical Science With Electronics</a
-              >
+              <br /><a href="#" class="subject-link">Physical Science With Electronics</a>
             </td>
           </tr>
           <tr class="row">
@@ -425,14 +68,10 @@
           </tr>
           <tr class="row">
             <td>
-              <br /><a href="Bcom(H)KV.html" class="subject-link"
-                >Bachelor of Commerce</a
-              >
+              <br /><a href="Bcom(H)KV.html" class="subject-link">Bachelor of Commerce</a>
             </td>
             <td style="padding-left: 50px">
-              <br /><a href="Bcom(P)KV.html" class="subject-link"
-                >Bachelor of Commerce</a
-              >
+              <br /><a href="Bcom(P)KV.html" class="subject-link">Bachelor of Commerce</a>
             </td>
           </tr>
         </table>
@@ -446,48 +85,33 @@
             <th style="padding-left: 50px">Program</th>
           </tr>
           <tr class="row">
-            <td>
-              <br /><a href="english.html" class="subject-link">English</a>
-            </td>
+            <td><br /><a href="english.html" class="subject-link">English</a></td>
             <td style="padding-left: 50px">
-              <br /><a href="bba.html" class="subject-link"
-                >Bachelor of Business Administration [BBA(FIA)]</a
-              >
+              <br /><a href="bba.html" class="subject-link">Bachelor of Business Administration [BBA(FIA)]</a>
             </td>
           </tr>
           <tr class="row">
-            <td>
-              <br /><a href="history.html" class="subject-link">History</a>
-            </td>
+            <td><br /><a href="history.html" class="subject-link">History</a></td>
             <td style="padding-left: 50px">
-              <br /><a href="bbe.html" class="subject-link"
-                >Bachelor of Business Economics [BBE]</a
-              >
+              <br /><a href="bbe.html" class="subject-link">Bachelor of Business Economics [BBE]</a>
             </td>
           </tr>
           <tr class="row">
-            <td>
-              <br /><a href="polsci.html" class="subject-link"
-                >Political Science</a
-              >
-            </td>
+            <td><br /><a href="polsci.html" class="subject-link">Political Science</a></td>
             <td style="padding-left: 50px">
-              <br /><a href="bms.html" class="subject-link"
-                >Bachelor of Management Studies [BMS]</a
-              >
+              <br /><a href="bms.html" class="subject-link">Bachelor of Management Studies [BMS]</a>
             </td>
           </tr>
           <tr class="row">
             <td><br /><a href="eco.html" class="subject-link">Economics</a></td>
           </tr>
           <tr class="row">
-            <td>
-              <br /><a href="sociology.html" class="subject-link">Sociology</a>
-            </td>
+            <td><br /><a href="sociology.html" class="subject-link">Sociology</a></td>
           </tr>
         </table>
       </div>
     </div>
+
     <div class="ai-dropdown">
       <button class="dropbtn">AI Tools ▼</button>
       <div class="dropdown-content">
@@ -503,42 +127,18 @@
       <iframe id="ai-frame" src="" frameborder="0"></iframe>
     </div>
 
-    <footer>
-      <div id="foot">
-        <div>
-          <h3>Description</h3>
-          <p>
-            All materials (books, notes, and papers) are posted for educational
-            purposes only. We do not claim ownership.
-          </p>
-        </div>
-        <div>
-          <h3>Links</h3>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="KV.html">Knowledge Vault</a></li>
-            <li><a href="#">Exam Archive</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Support</h3>
-          <p><a href="contact.html">Contact Us</a></p>
-        </div>
-        <div>
-          <h3>Contact</h3>
-          <p>
-            <a href="mailto:collegemadeeasy.du@gmail.com"
-              >📧 collegemadeeasy.du@gmail.com</a
-            >
-          </p>
-        </div>
-      </div>
-      <div id="last">
-        <p>&copy; 2025 collegemadeeasy &#9475; All Rights Reserved</p>
-      </div>
-    </footer>
-    <script src="script.js"></script>
+    <div id="footer"></div>  
+
+    <script src="assets/js/layout.js"></script>  
+    <script src="assets/js/ai.js"></script>
+    <script>
+      const loggedInUser = localStorage.getItem("loggedInUser");
+      if (loggedInUser) {
+        document.getElementById("userGreeting").textContent = `Hello, ${loggedInUser}`;
+      } else {
+        alert("You are not logged in!");
+        window.location.href = "login.html";
+      }
+    </script>
   </body>
 </html>
