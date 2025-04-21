@@ -1,63 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CS Knowledge Vault</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
-  <body>
-    <!-- Header -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mathematics Knowledge Vault</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #6dd5ed, #2193b0);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
 
-    <div id="header"></div>
+    #header {
+      background-color: #2193b0;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+    }
 
-    <!-- Title -->
+    #title h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #fff;
+      text-align: center;
+    }
 
-    <div id="title" style="text-align: center">
-      <h1>WELCOME TO KNOWLEDGE VAULT FOR Mathematics(Honors)!!!!!!!</h1>
+    h2 {
+      text-align: center;
+      color: #2193b0;
+      margin: 40px 0 20px;
+    }
+
+    #Youtube {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .playlist-section {
+      width: 300px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .playlist-section:hover {
+      transform: scale(1.05);
+    }
+
+    .playlist-section h2 {
+      color: #5a7fc0;
+    }
+
+    iframe {
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 15px;
+    }
+
+    .playlist-section h3 {
+      color: #2193b0;
+      margin: 10px 0;
+    }
+
+    @media (max-width: 768px) {
+      #Youtube {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .playlist-section {
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div id="header">
+    <h1>CS Knowledge Vault</h1>
+  </div>
+
+  <!-- Title -->
+  <div id="title">
+    <h1>WELCOME TO KNOWLEDGE VAULT FOR Mathematics(Honors)!!!!!!!</h1>
+  </div>
+
+  <h2>YouTube Playlists</h2>
+  
+  <div id="Youtube">
+    <!-- Algebra Playlist -->
+    <div class="playlist-section">
+      <h2>Algebra</h2>
+      <h3>English Playlist</h3>
+      <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLPvaSRcEQh4lykk65o_hVsgMooedWucW5&si=rHPUJ_AbzwDTYsKb" frameborder="0" allowfullscreen></iframe>
+      <h3>Hindi Playlist</h3>
+      <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLvTTv60o7qj_tdY9zH7YceES7jfXiZkAz&si=_vFK8mUrhm1QSKoe" frameborder="0" allowfullscreen></iframe>
     </div>
-    <!-- <div id="dropdown" style="text-align: center;">
-      <button onclick="myFunction()" class="dropbtn">Semester</button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="">Semester - I</a>
-        <a href=""><br />Semester - II</a>
-        <a href=""><br />Semester - III</a>
-        <a href=""><br />Semester - IV</a>
-        <a href=""><br />Semester - V</a>
-        <a href=""><br />Semester - VI</a><br />
-      </div>
-    </div> -->
-    <h2 style="text-align: center">Youtube Playlists</h2>
-    <div id="Youtube" style="display: flex; gap: 50px; align-items: start">
-      <div id="Algebra">
-        <h2 style="text-align: center">Algebra</h2>
 
-        <h3 style="text-align: center">English Playlist</h3>
-        <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLPvaSRcEQh4lykk65o_hVsgMooedWucW5&si=rHPUJ_AbzwDTYsKb frameborder="0" allowfullscreen></iframe>
-        
-        <h3 style="text-align: center">Hindi Playlist</h3>
-        <iframe height="200px" style="padding-left: 10px" src="https://www.youtube.com/embed/videoseries?list=PLvTTv60o7qj_tdY9zH7YceES7jfXiZkAz&si=_vFK8mUrhm1QSKoe" frameborder="0" allowfullscreen ></iframe>
-      
-      </div>
-      <div id="Elementary Real Analysis" style="padding-left: 205px" >
-        <h2 style="text-align: center">Elementary Real Analysis</h2>
-        
-        <h3 style="text-align: center">English Playlist</h3>
-        <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLUl4u3cNGP61O7HkcF7UImpM0cR_L2gSw&si=p5Ah0qaDUnipXKvp" frameborder="0" allowfullscreen ></iframe>
-        
-        <h3 style="text-align: center">Hindi Playlist</h3>
-        <iframe height="200px" style="padding-left: 10px" src="https://www.youtube.com/embed/videoseries?list=PL55H-akNMypeGspBNmh9QEz6BWlT84oTh&si=7otds0gMDJNNaUWQ" frameborder="0" allowfullscreen ></iframe>
-      </div>
-      <div id="Probability and Statistics" style="padding-left: 205px" >
-        <h2 style="text-align: center">Probability and Statistics</h2>
-        <h3 style="text-align: center">English Playlist</h3>
-        <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLX2gX-ftPVXUWwTzAkOhBdhplvz0fByqV&si=T60gRymR4yu3h-dE" frameborder="0" allowfullscreen > </iframe>
-
-        <h3 style="text-align: center">Hindi Playlist</h3>
-        <iframe height="200px" style="padding-left: 10px" src="https://www.youtube.com/embed/videoseries?list=PLU6SqdYcYsfJPF-4HphQQ8OceDtqhlSW8&si=2AadeZ_VBcOok1Je" frameborder="0" allowfullscreen > </iframe>
-      </div>
+    <!-- Elementary Real Analysis Playlist -->
+    <div class="playlist-section">
+      <h2>Elementary Real Analysis</h2>
+      <h3>English Playlist</h3>
+      <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLUl4u3cNGP61O7HkcF7UImpM0cR_L2gSw&si=p5Ah0qaDUnipXKvp" frameborder="0" allowfullscreen></iframe>
+      <h3>Hindi Playlist</h3>
+      <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PL55H-akNMypeGspBNmh9QEz6BWlT84oTh&si=7otds0gMDJNNaUWQ" frameborder="0" allowfullscreen></iframe>
     </div>
-    <div id="footer"></div>
-    <script src="assets/js/layout.js"></script>
-  </body>
+
+    <!-- Probability and Statistics Playlist -->
+    <div class="playlist-section">
+      <h2>Probability and Statistics</h2>
+      <h3>English Playlist</h3>
+      <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLX2gX-ftPVXUWwTzAkOhBdhplvz0fByqV&si=T60gRymR4yu3h-dE" frameborder="0" allowfullscreen></iframe>
+      <h3>Hindi Playlist</h3>
+      <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLU6SqdYcYsfJPF-4HphQQ8OceDtqhlSW8&si=2AadeZ_VBcOok1Je" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+  <script src="assets/js/layout.js"></script>
+
+</body>
 </html>

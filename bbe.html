@@ -3,56 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business Economics Knowledge Vault</title>
+    <title>B.Com (P) Knowledge Vault</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-  </head>
-  <body>
+    <style>
+      #title {
+        text-align: center;
+        margin: 40px 20px 20px;
+        color: #6c8b3c;
+      }
 
+      h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #4f6b29;
+      }
+
+      .youtube-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 20px 60px;
+        align-items: center;
+      }
+
+      @media (min-width: 992px) {
+        .youtube-container {
+          flex-direction: row;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 60px;
+        }
+      }
+
+      .subject-box {
+        background-color: #f1f5e9;
+        border-radius: 1em;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 300px;
+        transition: all 0.3s ease;
+      }
+
+      .subject-box:hover {
+        background-color: #e2e9d4;
+        box-shadow: 0 6px 18px rgba(108, 139, 60, 0.3);
+        transform: scale(1.03);
+      }
+
+      .subject-box h3,
+      .subject-box h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        color: #6c8b3c;
+      }
+
+      .subject-box iframe {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
     <!-- Header -->
-     
     <div id="header"></div>
 
     <!-- Title -->
-
-    <div id="title" style="text-align: center">
-      <h1>WELCOME TO KNOWLEDGE VAULT FOR Business Economics (Hons)!!!!!!!</h1>
+    <div id="title">
+      <h1>WELCOME TO KNOWLEDGE VAULT FOR Bachelors of Commerce (Program)!</h1>
     </div>
-    <!-- <div id="dropdown" style="text-align: center;">
-      <button onclick="myFunction()" class="dropbtn">Semester</button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="">Semester - I</a>
-        <a href=""><br />Semester - II</a>
-        <a href=""><br />Semester - III</a>
-        <a href=""><br />Semester - IV</a>
-        <a href=""><br />Semester - V</a>
-        <a href=""><br />Semester - VI</a><br />
-      </div>
-    </div> -->
-    <h2 style="text-align: center">Youtube Playlists</h2>
-    <div id="Youtube" style="display: flex; gap: 50px; align-items: start">
-      <div id="Maths">
-        <h3 style="text-align: center">English Playlist</h3>
-        <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLPvaSRcEQh4lykk65o_hVsgMooedWucW5&si=rHPUJ_AbzwDTYsKb" frameborder="0" allowfullscreen > </iframe>
 
-        <h3 style="text-align: center">Hindi Playlist</h3>
-        <iframe height="200px" style="padding-left: 10px" src="https://www.youtube.com/embed/videoseries?list=PLvTTv60o7qj_tdY9zH7YceES7jfXiZkAz&si=_vFK8mUrhm1QSKoe" frameborder="0" allowfullscreen > </iframe>
-      </div>
-      <div id="Python" style="padding-left: 205px">
-        <h3 style="text-align: center">English Playlist</h3>
-        <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLdo5W4Nhv31bZSiqiOL5ta39vSnBxpOPT&si=09yMCJEBmCMhhX9y" frameborder="0" allowfullscreen > </iframe>
+    <!-- YouTube Playlists -->
+    <h2>YouTube Playlists</h2>
 
-        <h3 style="text-align: center">Hindi Playlist</h3>
-        <iframe height="200px" style="padding-left: 10px" src="https://www.youtube.com/embed/videoseries?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg&si=meffrQyXUFZ2RL25" frameborder="0" allowfullscreen > </iframe>
-      </div>
-      <div id="CSA" style="padding-left: 205px">
-        <h3 style="text-align: center">English Playlist</h3>
-        <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLBlnK6fEyqRgLLlzdgiTUKULKJPYc0A4q&si=nZEMRYYOSUfLqG6m" frameborder="0" allowfullscreen > </iframe>
+    <div class="youtube-container">
+      <!-- Management -->
+      <div class="subject-box">
+        <h2>Management Principles & Applications</h2>
+        <h3>English Playlist</h3>
+        <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PL92RPe36fLKiKB-ymuwJg6ae3_u5zYrFH&si=ZXmA863AwuIFGZki" frameborder="0" allowfullscreen></iframe>
 
-        <h3 style="text-align: center">Hindi Playlist</h3>
-        <iframe height="200px" style="padding-left: 10px" src="https://www.youtube.com/embed/videoseries?list=PLxCzCOWd7aiHMonh3G6QNKq53C6oNXGrX&si=cga8r0P4SYtMZHfq" frameborder="0" allowfullscreen > </iframe>
+        <h3>Hindi Playlist</h3>
+        <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLttZ-A3eBJv0rl6FyGZL6Zuf8daByn4CA&si=kXKIGoGphQrEQ3ig" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <!-- Business Laws -->
+      <div class="subject-box">
+        <h2>Business Laws</h2>
+        <h3>English Playlist</h3>
+        <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLoJHkGmgd2_nEfRW1Cm7ojI5abflSzRVE&si=MyhkBkdvjNY4p9a0" frameborder="0" allowfullscreen></iframe>
+
+        <h3>Hindi Playlist</h3>
+        <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLsOlZpO_j74pnpRLV9Fq9PpVjj66Tq9QD&si=jTigt5ilHXh6v04p" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <!-- Financial Accounting -->
+      <div class="subject-box">
+        <h2>Financial Accounting</h2>
+        <h3>English Playlist</h3>
+        <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLxP0KZzCGFYMghlw8ObWScuUwepqjXjbB&si=lc2_HSOQQ9gYwvJV" frameborder="0" allowfullscreen></iframe>
+
+        <h3>Hindi Playlist</h3>
+        <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLsOlZpO_j74qjpP84xI1zXFkPsapbi16h&si=fOWvQqF3BXH8S3BE" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
+
+    <!-- Footer -->
     <div id="footer"></div>
-       <script src="assets/js/layout.js"></script>
+    <script src="assets/js/layout.js"></script>
   </body>
 </html>
