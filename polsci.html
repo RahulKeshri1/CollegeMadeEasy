@@ -2,45 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Political Science Knowledge Vault</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-
+    <link rel="stylesheet" href="assets/css/styles.css">
     <style>
-      body {
-        font-family: 'Segoe UI', sans-serif;
-        background: linear-gradient(to right, #6dd5ed, #2193b0);
-        margin: 0;
-        padding: 0;
-        color: #333;
-      }
-
-      #header {
-        background-color: #2193b0;
-        padding: 20px 0;
-        text-align: center;
-        color: white;
-      }
-
       #title {
         text-align: center;
         margin: 40px 20px 20px;
-        color: #fff;
-      }
-
-      #title h1 {
-        font-size: 36px;
-        margin: 0;
-        color: #fff;
+        color: #6c8b3c;
       }
 
       h2 {
         text-align: center;
-        color: #3f5fa5;
-        margin: 40px 0 20px;
+        margin-bottom: 30px;
+        color: #4f6b29;
       }
 
-      #Youtube {
+      .youtube-container {
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -49,39 +27,38 @@
       }
 
       @media (min-width: 992px) {
-        #Youtube {
+        .youtube-container {
           flex-direction: row;
           justify-content: center;
           align-items: flex-start;
-          flex-wrap: wrap;
           gap: 60px;
         }
       }
 
-      .playlist-section {
-        background-color: #f1f4fc;
+      .subject-box {
+        background-color: #f1f5e9;
         border-radius: 1em;
         padding: 20px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         width: 100%;
         max-width: 300px;
         transition: all 0.3s ease;
-        text-align: center;
       }
 
-      .playlist-section:hover {
-        background-color: #dde9ff;
-        box-shadow: 0 6px 18px rgba(90, 127, 192, 0.3);
+      .subject-box:hover {
+        background-color: #e2e9d4;
+        box-shadow: 0 6px 18px rgba(108, 139, 60, 0.3);
         transform: scale(1.03);
       }
 
-      .playlist-section h2,
-      .playlist-section h3 {
-        color: #5a7fc0;
+      .subject-box h3,
+      .subject-box h2 {
+        text-align: center;
         margin-bottom: 10px;
+        color: #6c8b3c;
       }
 
-      .playlist-section iframe {
+      .subject-box iframe {
         width: 100%;
         border-radius: 8px;
         margin-bottom: 20px;
@@ -91,50 +68,51 @@
 
   <body>
     <!-- Header -->
-    <div id="header">
-      <h1>CS Knowledge Vault</h1>
-    </div>
+    <div id="header"></div>
 
     <!-- Title -->
     <div id="title">
-      <h1>WELCOME TO KNOWLEDGE VAULT FOR POLITICAL SCIENCE (HONS)!</h1>
+        <h1>WELCOME TO KNOWLEDGE VAULT FOR POLITICAL SCIENCE (HONS)!</h1>
     </div>
 
     <!-- Section Heading -->
     <h2>YouTube Playlists</h2>
 
-    <!-- YouTube Playlist Wrapper -->
-    <div id="Youtube">
-      <!-- Playlist Card 1 -->
-      <div class="playlist-section">
-        <h2>Understanding Political Theory</h2>
-        <h3>English Playlist</h3>
-        <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PL5vHuXI8HM5EQxoEP1QtN5YKCXKcY0lFQ&si=fKUpNb4ULMSc9013" frameborder="0" allowfullscreen></iframe>
-        <h3>Hindi Playlist</h3>
-        <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLFvpDkWVpN6pZzNkLHbyPI8LPoHYTti8A&si=cToER7zYnf3TZlKZ" frameborder="0" allowfullscreen></iframe>
+    <div class="youtube-container">
+        <!-- Understanding Political Theory -->
+        <div class="subject-box">
+          <h2>Understanding Political Theory</h2>
+          <h3>English Playlist</h3>
+          <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PL5vHuXI8HM5EQxoEP1QtN5YKCXKcY0lFQ&si=fKUpNb4ULMSc9013" frameborder="0" allowfullscreen></iframe>
+  
+          <h3>Hindi Playlist</h3>
+          <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLFvpDkWVpN6pZzNkLHbyPI8LPoHYTti8A&si=cToER7zYnf3TZlKZ" frameborder="0" allowfullscreen></iframe>
+        </div>
+  
+        <!-- Constitutional Government and Democracy -->
+        <div class="subject-box">
+          <h2>Constitutional Government and Democracy</h2>
+          <h3>English Playlist</h3>
+          <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLoPQmEeX6Keb5lieBncUirp-rE5iZRmyv&si=qfpFMG_a5m_dF2Sz" frameborder="0" allowfullscreen></iframe>
+  
+          <h3>Hindi Playlist</h3>
+          <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLoPQmEeX6Keb5lieBncUirp-rE5iZRmyv&si=qfpFMG_a5m_dF2Sz" frameborder="0" allowfullscreen></iframe>
+        </div>
+  
+        <!-- Political Theory - Concepts and Debate -->
+        <div class="subject-box">
+          <h2>Political Theory - Concepts and Debate</h2>
+          <h3>English Playlist</h3>
+          <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLoPQmEeX6KeYL353S-GXvZ-ng8MOrDqAV&si=YPItJT2vdnWhdczG" frameborder="0" allowfullscreen></iframe>
+  
+          <h3>Hindi Playlist</h3>
+          <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLS5ZayzZbkaHBAtnZscSrXlpvGCSrDUjn&si=WfVxiBXMUK6xyBH6" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
-
-      <!-- Playlist Card 2 -->
-      <div class="playlist-section">
-        <h2>Constitutional Government and Democracy</h2>
-        <h3>English Playlist</h3>
-        <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLoPQmEeX6Keb5lieBncUirp-rE5iZRmyv&si=qfpFMG_a5m_dF2Sz" frameborder="0" allowfullscreen></iframe>
-        <h3>Hindi Playlist</h3>
-        <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLoPQmEeX6Keb5lieBncUirp-rE5iZRmyv&si=qfpFMG_a5m_dF2Sz" frameborder="0" allowfullscreen></iframe>
-      </div>
-
-      <!-- Playlist Card 3 -->
-      <div class="playlist-section">
-        <h2>Political Theory - Concepts and Debate</h2>
-        <h3>English Playlist</h3>
-        <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLoPQmEeX6KeYL353S-GXvZ-ng8MOrDqAV&si=YPItJT2vdnWhdczG" frameborder="0" allowfullscreen></iframe>
-        <h3>Hindi Playlist</h3>
-        <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLS5ZayzZbkaHBAtnZscSrXlpvGCSrDUjn&si=WfVxiBXMUK6xyBH6" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <div id="footer"></div>
-    <script src="assets/js/layout.js"></script>
-  </body>
-</html>
+  
+      <!-- Footer -->
+      <div id="footer"></div>
+      <script src="assets/js/layout.js"></script>
+    </body>
+  </html>
+  

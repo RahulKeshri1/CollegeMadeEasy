@@ -3,93 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/styles.css">
   <title>Mathematics Knowledge Vault</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #6dd5ed, #2193b0);
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-
-    #header {
-      background-color: #2193b0;
-      padding: 20px 0;
+    #title {
       text-align: center;
-      color: white;
-    }
-
-    #title h1 {
-      margin: 0;
-      font-size: 36px;
-      color: #fff;
-      text-align: center;
+      margin: 40px 20px 20px;
+      color: #6c8b3c;
     }
 
     h2 {
       text-align: center;
-      color: #2193b0;
-      margin: 40px 0 20px;
+      margin-bottom: 30px;
+      color: #4f6b29;
     }
 
-    #Youtube {
+    .youtube-container {
       display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
-      padding: 20px;
+      flex-direction: column;
+      gap: 40px;
+      padding: 0 20px 60px;
+      align-items: center;
     }
 
-    .playlist-section {
-      width: 300px;
-      background-color: white;
+    @media (min-width: 992px) {
+      .youtube-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 60px;
+      }
+    }
+
+    .subject-box {
+      background-color: #f1f5e9;
+      border-radius: 1em;
       padding: 20px;
-      border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 300px;
+      transition: all 0.3s ease;
+    }
+
+    .subject-box:hover {
+      background-color: #e2e9d4;
+      box-shadow: 0 6px 18px rgba(108, 139, 60, 0.3);
+      transform: scale(1.03);
+    }
+
+    .subject-box h3,
+    .subject-box h2 {
       text-align: center;
-      margin: 10px;
-      transition: transform 0.3s ease;
+      margin-bottom: 10px;
+      color: #6c8b3c;
     }
 
-    .playlist-section:hover {
-      transform: scale(1.05);
-    }
-
-    .playlist-section h2 {
-      color: #5a7fc0;
-    }
-
-    iframe {
+    .subject-box iframe {
+      width: 100%;
       border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      margin-bottom: 15px;
-    }
-
-    .playlist-section h3 {
-      color: #2193b0;
-      margin: 10px 0;
-    }
-
-    @media (max-width: 768px) {
-      #Youtube {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .playlist-section {
-        width: 100%;
-        max-width: 400px;
-      }
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
 
   <!-- Header -->
-  <div id="header">
-    <h1>CS Knowledge Vault</h1>
-  </div>
+  <div id="header"></div>
 
   <!-- Title -->
   <div id="title">
@@ -98,9 +77,9 @@
 
   <h2>YouTube Playlists</h2>
   
-  <div id="Youtube">
+  <div class="youtube-container">
     <!-- Algebra Playlist -->
-    <div class="playlist-section">
+    <div class="subject-box">
       <h2>Algebra</h2>
       <h3>English Playlist</h3>
       <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLPvaSRcEQh4lykk65o_hVsgMooedWucW5&si=rHPUJ_AbzwDTYsKb" frameborder="0" allowfullscreen></iframe>
@@ -109,7 +88,7 @@
     </div>
 
     <!-- Elementary Real Analysis Playlist -->
-    <div class="playlist-section">
+    <div class="subject-box">
       <h2>Elementary Real Analysis</h2>
       <h3>English Playlist</h3>
       <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLUl4u3cNGP61O7HkcF7UImpM0cR_L2gSw&si=p5Ah0qaDUnipXKvp" frameborder="0" allowfullscreen></iframe>
@@ -118,7 +97,7 @@
     </div>
 
     <!-- Probability and Statistics Playlist -->
-    <div class="playlist-section">
+    <div class="subject-box">
       <h2>Probability and Statistics</h2>
       <h3>English Playlist</h3>
       <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLX2gX-ftPVXUWwTzAkOhBdhplvz0fByqV&si=T60gRymR4yu3h-dE" frameborder="0" allowfullscreen></iframe>
