@@ -3,17 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
     <title>College Made Easy</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong"/>
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <div id="userGreeting" style="float: right; margin-right: 20px; font-weight: bold;"></div>
+    <span id="userGreeting" style="float: right; margin-right: 20px; font-weight: bold"></span>
     <div id="header"></div>
 
     <div class="stream-section">
       <h2 style="text-align: center">
-       <b>Academic Streams !!!!!!!</b>
+        <b>Academic Streams !!!!!!!</b>
       </h2>
     </div>
 
@@ -40,13 +44,21 @@
             <th>Subjects</th>
           </tr>
           <tr class="row">
-            <td><a href="english.html" class="subject-link">English Hons</a></td>
+            <td>
+              <a href="english.html" class="subject-link">English Hons</a>
+            </td>
           </tr>
           <tr class="row">
-            <td><a href="history.html" class="subject-link">History Hons</a></td>
+            <td>
+              <a href="history.html" class="subject-link">History Hons</a>
+            </td>
           </tr>
           <tr class="row">
-            <td><a href="polsci.html" class="subject-link">Political Science Hons</a></td>
+            <td>
+              <a href="polsci.html" class="subject-link"
+                >Political Science Hons</a
+              >
+            </td>
           </tr>
           <tr class="row">
             <td><a href="eco.html" class="subject-link">Economics Hons</a></td>
@@ -64,10 +76,18 @@
             <td><a href="bba.html" class="subject-link">BBA (FIA)</a></td>
           </tr>
           <tr class="row">
-            <td><a href="bbe.html" class="subject-link">BBE (Bachelor of Business Economics)</a></td>
+            <td>
+              <a href="bbe.html" class="subject-link"
+                >BBE (Bachelor of Business Economics)</a
+              >
+            </td>
           </tr>
           <tr class="row">
-            <td><a href="bms.html" class="subject-link">BMS (Bachelor of Management Studies)</a></td>
+            <td>
+              <a href="bms.html" class="subject-link"
+                >BMS (Bachelor of Management Studies)</a
+              >
+            </td>
           </tr>
         </table>
       </div>
@@ -79,7 +99,9 @@
             <th>Subjects</th>
           </tr>
           <tr class="row">
-            <td><a href="CSnotes.html" class="subject-link">Computer Science</a></td>
+            <td>
+              <a href="CSnotes.html" class="subject-link">Computer Science</a>
+            </td>
           </tr>
           <tr class="row">
             <td><a href="Maths(H).html" class="subject-link">Maths Hons</a></td>
@@ -103,11 +125,11 @@
       <iframe id="ai-frame" src="" frameborder="0"></iframe>
     </div>
 
-    <div id="footer"></div>  
+    <div id="footer"></div>
 
-    <script src="assets/js/layout.js"></script>  
+    <script src="assets/js/layout.js"></script>
     <script src="assets/js/ai.js"></script>
-    <script>
+    <!-- <script>
       const loggedInUser = localStorage.getItem("loggedInUser");
       if (loggedInUser) {
         document.getElementById("userGreeting").textContent = `Hello ${loggedInUser}`;
@@ -115,6 +137,55 @@
         alert("You are not logged in!");
         window.location.href = "login.html";
       }
-    </script>
+
+      // Periodically check login status every 2.5 seconds
+      setInterval(function () {
+        const user = localStorage.getItem("loggedInUser");
+        if (!user) {
+          window.location.href = "login.html";
+        }
+      }, 2500); // 2500ms = 2.5 seconds
+
+      // Logout functionality
+      document
+        .getElementById("logoutBtn")
+        .addEventListener("click", function () {
+          localStorage.removeItem("loggedInUser"); // Remove the token
+          window.location.href = "login.html"; // Redirect to login page
+        });
+    </script> -->
+    <!-- <script>
+      const loggedInUser = localStorage.getItem("loggedInUser");
+      if (loggedInUser) {
+        document.getElementById("userGreeting").textContent = `Hello ${loggedInUser}`;
+      } else {
+        alert("You are not logged in!");
+        window.location.href = "login.html";
+      }
+
+      // Periodically check login status every 2.5 seconds
+      setInterval(function () {
+        const user = localStorage.getItem("loggedInUser");
+        if (!user) {
+          window.location.href = "login.html";
+        }
+      }, 2500);
+
+      const authLink = document.getElementById("auth-link");
+      if (authLink) {
+        if (loggedInUser) {
+          authLink.textContent = "Logout";
+          authLink.href = "#";
+          authLink.addEventListener("click", function(e) {
+            e.preventDefault();
+            localStorage.removeItem("loggedInUser");
+            window.location.href = "login.html";
+          });
+        } else {
+          authLink.textContent = "Login";
+          authLink.href = "login.html";
+        }
+      }
+    </script> -->
   </body>
 </html>
