@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Political Science Knowledge Vault</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
     <style>
       body {
         font-family: 'Segoe UI', sans-serif;
@@ -20,73 +22,74 @@
         color: white;
       }
 
-      #title h1 {
-        margin: 0;
-        font-size: 36px;
-        color: #fff;
+      #title {
         text-align: center;
+        margin: 40px 20px 20px;
+        color: #fff;
+      }
+
+      #title h1 {
+        font-size: 36px;
+        margin: 0;
+        color: #fff;
       }
 
       h2 {
         text-align: center;
-        color: #2193b0;
+        color: #3f5fa5;
         margin: 40px 0 20px;
       }
 
       #Youtube {
         display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        justify-content: center;
-        padding: 20px;
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 20px 60px;
+        align-items: center;
+      }
+
+      @media (min-width: 992px) {
+        #Youtube {
+          flex-direction: row;
+          justify-content: center;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          gap: 60px;
+        }
       }
 
       .playlist-section {
-        width: 300px;
-        background-color: white;
+        background-color: #f1f4fc;
+        border-radius: 1em;
         padding: 20px;
-        border-radius: 12px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 300px;
+        transition: all 0.3s ease;
         text-align: center;
-        margin: 10px;
-        transition: transform 0.3s ease;
       }
 
       .playlist-section:hover {
-        transform: scale(1.05);
+        background-color: #dde9ff;
+        box-shadow: 0 6px 18px rgba(90, 127, 192, 0.3);
+        transform: scale(1.03);
       }
 
-      .playlist-section h2 {
-        color: #5a7fc0;
-      }
-
-      iframe {
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        margin-bottom: 15px;
-        width: 100%;
-      }
-
+      .playlist-section h2,
       .playlist-section h3 {
-        color: #2193b0;
-        margin: 10px 0;
+        color: #5a7fc0;
+        margin-bottom: 10px;
       }
 
-      @media (max-width: 768px) {
-        #Youtube {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .playlist-section {
-          width: 100%;
-          max-width: 400px;
-        }
+      .playlist-section iframe {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 20px;
       }
     </style>
   </head>
-  <body>
 
+  <body>
     <!-- Header -->
     <div id="header">
       <h1>CS Knowledge Vault</h1>
@@ -94,43 +97,44 @@
 
     <!-- Title -->
     <div id="title">
-      <h1>WELCOME TO KNOWLEDGE VAULT FOR Political Science (Hons)!!!!!!!</h1>
+      <h1>WELCOME TO KNOWLEDGE VAULT FOR POLITICAL SCIENCE (HONS)!</h1>
     </div>
 
+    <!-- Section Heading -->
     <h2>YouTube Playlists</h2>
 
+    <!-- YouTube Playlist Wrapper -->
     <div id="Youtube">
-      <!-- Understanding Political Theory Playlist -->
+      <!-- Playlist Card 1 -->
       <div class="playlist-section">
         <h2>Understanding Political Theory</h2>
         <h3>English Playlist</h3>
-        <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PL5vHuXI8HM5EQxoEP1QtN5YKCXKcY0lFQ&si=fKUpNb4ULMSc9013" frameborder="0" allowfullscreen></iframe>
+        <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PL5vHuXI8HM5EQxoEP1QtN5YKCXKcY0lFQ&si=fKUpNb4ULMSc9013" frameborder="0" allowfullscreen></iframe>
         <h3>Hindi Playlist</h3>
-        <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLFvpDkWVpN6pZzNkLHbyPI8LPoHYTti8A&si=cToER7zYnf3TZlKZ" frameborder="0" allowfullscreen></iframe>
+        <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLFvpDkWVpN6pZzNkLHbyPI8LPoHYTti8A&si=cToER7zYnf3TZlKZ" frameborder="0" allowfullscreen></iframe>
       </div>
 
-      <!-- Constitutional Government and Democracy Playlist -->
+      <!-- Playlist Card 2 -->
       <div class="playlist-section">
         <h2>Constitutional Government and Democracy</h2>
         <h3>English Playlist</h3>
-        <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLoPQmEeX6Keb5lieBncUirp-rE5iZRmyv&si=qfpFMG_a5m_dF2Sz" frameborder="0" allowfullscreen></iframe>
+        <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLoPQmEeX6Keb5lieBncUirp-rE5iZRmyv&si=qfpFMG_a5m_dF2Sz" frameborder="0" allowfullscreen></iframe>
         <h3>Hindi Playlist</h3>
-        <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLoPQmEeX6Keb5lieBncUirp-rE5iZRmyv&si=qfpFMG_a5m_dF2Sz" frameborder="0" allowfullscreen></iframe>
+        <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLoPQmEeX6Keb5lieBncUirp-rE5iZRmyv&si=qfpFMG_a5m_dF2Sz" frameborder="0" allowfullscreen></iframe>
       </div>
 
-      <!-- Political Theory - Concepts and Debate Playlist -->
+      <!-- Playlist Card 3 -->
       <div class="playlist-section">
         <h2>Political Theory - Concepts and Debate</h2>
         <h3>English Playlist</h3>
-        <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLoPQmEeX6KeYL353S-GXvZ-ng8MOrDqAV&si=YPItJT2vdnWhdczG" frameborder="0" allowfullscreen></iframe>
+        <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLoPQmEeX6KeYL353S-GXvZ-ng8MOrDqAV&si=YPItJT2vdnWhdczG" frameborder="0" allowfullscreen></iframe>
         <h3>Hindi Playlist</h3>
-        <iframe height="200px" src="https://www.youtube.com/embed/videoseries?list=PLS5ZayzZbkaHBAtnZscSrXlpvGCSrDUjn&si=WfVxiBXMUK6xyBH6" frameborder="0" allowfullscreen></iframe>
+        <iframe height="200" src="https://www.youtube.com/embed/videoseries?list=PLS5ZayzZbkaHBAtnZscSrXlpvGCSrDUjn&si=WfVxiBXMUK6xyBH6" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
 
+    <!-- Footer -->
     <div id="footer"></div>
-
     <script src="assets/js/layout.js"></script>
-
   </body>
 </html>
