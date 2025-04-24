@@ -12,7 +12,9 @@
     <div id="header"></div>
 
     <div class="stream-section">
-      <h2>Academic Streams</h2>
+      <h2 style="text-align: center">
+       <b>Academic Streams !!!!!!!</b>
+      </h2>
     </div>
 
     <div class="subjects-container">
@@ -108,7 +110,7 @@
     <script>
       const loggedInUser = localStorage.getItem("loggedInUser");
       if (loggedInUser) {
-        document.getElementById("userGreeting").textContent = `Hello, ${loggedInUser}`;
+        document.getElementById("userGreeting").textContent = `Hello ${loggedInUser}`;
       } else {
         alert("You are not logged in!");
         window.location.href = "login.html";
